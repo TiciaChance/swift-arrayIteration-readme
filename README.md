@@ -125,6 +125,30 @@ didWeIncludeRileyInCharacters(characters)
 // About to return true.
 ```
 * You can ask them... what do you think would print if we were to add Riley to the front of the array instead of being at the end. Also, what would print if we removed Riley from this array. Ask them to walk through it in their head to see if they can figure it out BEFORE they make the attempt at writing the code
+
+* I think we should talk about `enumerate()` here but I'm not 100% sure on it. I'm up to discuss this if you think we shouldn't.
+
+```swift
+let myFavoriteZeldaGames = [
+    "Ocarina of Time",
+    "A Link to the Past",
+    "Majora's Mask",
+    "Wind Waker",
+    "Twighlight Princess"
+]
+
+for (index, game) in myFavoriteZeldaGames.enumerate() {
+    print("\(index + 1). The Legend of Zelda: \(game)")
+}
+
+// 1. The Legend of Zelda: Ocarina of Time
+// 2. The Legend of Zelda: A Link to the Past
+// 3. The Legend of Zelda: Majora's Mask
+// 4. The Legend of Zelda: Wind Waker
+// 5. The Legend of Zelda: Twighlight Princess
+```
+
+* If we do cover enumerate, maybe we VERY briefly talk about Tuples (but not too much because Tuples will be brought up in another unit.
  
 
 
