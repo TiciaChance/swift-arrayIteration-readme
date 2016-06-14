@@ -185,7 +185,7 @@ for friend in friends {
 // Hello Jessica
 ```
 
-This examples starts with a familiar array initialization, but then instead of using the `print` command for each value in the array, says that `for` each value in the `friends` array, process the instructions in-between the `{}` symbols, which are called 'curly brackets' or 'mustaches'. In this example these instructions print the current value of `friend`, or the value of the current index in the `friends` array.
+This examples starts with a familiar array initialization, but then instead of using the `print` command for each value in the array, says that `for` each value in the `friends` array, process the instructions in-between the `{}` symbols, which are called 'curly brackets' or 'mustaches'. In this example these instructions print the current value of `friend`, or the value of the current index in the `friends` array, in the order they appear in the array.
 
 As `friends` is an array of type String, the type of `friend` will also be a String, and you can confirm this by typing the example above into a playground and _option + clicking_ `friend`.
 
@@ -211,6 +211,8 @@ print(squaredNumbers)
 ```
 
 For the first `numbers` array, you use the `let` keyword as you don't want to change the values in the array. As you don't know what the values of the second `squaredNumbers` array will be yet, you initialize it first with no values. Inside the `for in` loop you generate the square of the value at the current index of the array and assign it to another unchanging variable. The next line introduces something called a _method_, which you can think of as a pre-written convenient way of performing actions on something. In this particular case `.append` adds a new value to the end of the `squaredNumbers` array.
+
+In the first iteration of the `for in` loop, `number`, which is of type `Int`, will have a value of 1\. The value of `number` is then squared (1 _1), assigned to the `squaredNumber` constant, and appended to the `squaredNumbers` array. During the second iteration, `number` will have a value of 2 and the squared value will be 4 (2_ 2). This value is then assigned to a `squaredNumber` constant and appended to the `squaredNumbers` array. The same process continues until the array is fully iterated.
 
 This last example introduced a couple of new concepts, if you want to understand better what a line of code is doing then feel free to add `print` and `if` statements to inspect values (this is called 'debugging'). For example to see the value of `squaredNumber` you could add `print (squaredNumber)` inside the loop.
 
@@ -264,8 +266,10 @@ print numberOfFriendsAbove70(gradesFromExam)
 
 Again, there's a lot happening in this example, so let's break everything down by starting at the bottom of the code. First you create an array called `gradesFromExam` of your friends grades that can't change and then pass that array to the `numberOfFriendsAbove70` function and print the returned result.
 
-At the declaration of the `numberOfFriendsAbove70` function you set the incoming parameter as an array of numbers and the return value as a single number. Inside the function you first initialize to 0 a variable to count the number of grades over 70.
+At the declaration of the `numberOfFriendsAbove70` function you set the incoming parameter (accessed by the `grades` variable) as an array of numbers and the return value as a single number. Inside the function you first initialize to 0 a variable to count the number of grades over 70.
 
 Next iterate through each value in the `grades` array and if the value at the current index is greater than 70 increase the value of `studentsAbove70` by 1\. Once the array has been fully iterated, return the total value or `studentsAbove70`.
+
+Have a good look at the code above as it introduces a lot of new, but essential concepts. Try this code in a playground and add some `print` commands to see if your understanding of it matches the practical application.
 
 [View this lesson on Learn.co](https://learn.co/lessons/ArrayIteration)
