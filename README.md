@@ -46,7 +46,7 @@ This examples starts with a familiar array initialization, but then instead of u
 
 As `friends` is an array of type String, the type of `friend` will also be a String, and you can confirm this by typing the example above into a playground and _option + clicking_ `friend`.
 
-![Array Type Inference](array-type-inference.png)
+![Array Type Inference](http://i.imgur.com/hbMTodb.png?1)
 
 ## Loops and Calculations
 
