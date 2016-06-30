@@ -1,16 +1,14 @@
 # Array - Iteration
 
-![Drawing](http://vignette4.wikia.nocookie.net/gameofthrones/images/b/b8/Hodor_1x04.jpg/revision/latest?cb=20110525185057)
+![Drawing](http://i.imgur.com/mkMJb1x.jpg?1)
 
-> Hodor.
+> Hodor. -[Hodor](http://gameofthrones.wikia.com/wiki/Hodor)
 
-## Learning Objectives - The student should be able to.
+## Learning Objectives 
 
 - Explain the problem they are solving by being able to iterate over values in an `Array`.
 - Create a `for-in` loop to iterate over an `Array`.
 
-
---------------------------------------------------------------------------------
 
 ## Improving Repetitive Tasks
 
